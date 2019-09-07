@@ -1,0 +1,47 @@
+<p>
+  add-product works!
+</p>
+
+
+<div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+
+                        
+            <input matInput id="productName" placeholder="Product Name" formControlName="name"  required>   
+                
+      
+                    
+            <textarea matInput id="productDescription" placeholder="Description" formControlName="description" ></textarea>             
+         
+
+                       
+              <input matInput  id="price" type="number" placeholder="Product Price" formControlName="price" >                
+            
+          
+         
+              <input matInput id="productImage" type="text" placeholder="imagelink" formControlName="images" >
+                  
+          
+
+        <button mat-raised-button color="primary" type="submit" id="btnAddProduct" >Add Product</button>
+    
+              
+         
+  
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
